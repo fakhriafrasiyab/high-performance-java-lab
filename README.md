@@ -20,3 +20,26 @@ StringBuilder sb = new StringBuilder();
 for (int i = 0; i < length; i++) {
     sb.append("x");
 }
+```
+
+###2. 'builderWithCapacity`
+
+Creates a StringBuilder with an initial capacity equal to the final string size.
+
+```java
+StringBuilder sb = new StringBuilder(length);
+for (int i = 0; i < length; i++) {
+    sb.append("x");
+}
+```
+
+jmh-benchmarks/
+│
+├── src/main/java/com/fakhri/hpjava/
+│   ├── StringBuilderCapacityBenchmark.java
+│   └── BenchmarkRunner.java
+│
+├── pom.xml
+└── README.md
+
+

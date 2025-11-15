@@ -8,7 +8,8 @@ public class BenchmarkRunner {
 
     public static void main(String[] args) throws Exception {
         Options opt = new OptionsBuilder()
-                .include(StringConcatBenchmark.class.getSimpleName())
+//                .include(StringConcatBenchmark.class.getSimpleName())
+                .include(StringBuilderCapacityBenchmark.class.getSimpleName())
                 .build();
         new Runner(opt).run();
     }

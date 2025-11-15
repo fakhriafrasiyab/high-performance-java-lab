@@ -9,7 +9,7 @@ public class BenchmarkRunner {
     public static void main(String[] args) throws Exception {
 
         Options opt = new OptionsBuilder()
-                .include(CounterBenchmark.class.getSimpleName())
+                .include(ImprovedCounterBenchmark.class.getSimpleName())
                 .warmupIterations(2)
                 .measurementIterations(5)
                 .forks(2)

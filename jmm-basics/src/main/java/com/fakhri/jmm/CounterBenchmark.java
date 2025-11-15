@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.LongAdder;
 @BenchmarkMode(Mode.Throughput)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @State(Scope.Benchmark)
-@Threads(8)
+@Threads(64)
 public class CounterBenchmark {
 
 
